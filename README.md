@@ -23,7 +23,3 @@ Project ini menggabungkan konsep **frontend, backend, dan blockchain** dalam sat
 - **Smart Contract** : Solidity
 - **Wallet** : MetaMask
 - **Version Control** : Git & GitHub
-
----
-
-## Struktur Folder Project
