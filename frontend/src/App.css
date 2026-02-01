@@ -1,0 +1,28 @@
+.container {
+  padding: 20px;
+  font-family: Arial;
+}
+
+button {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.wallet {
+  margin: 10px 0;
+}
+
+.transactions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.error {
+  color: red;
+}

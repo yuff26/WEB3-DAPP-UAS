@@ -1,12 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web3 DApp UAS</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
-</html>
+const express = require("express");
+const cors = require("cors");
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+app.get("/api/transactions", (req, res) => {
+  res.json([
+    {
+      id: 1,
+      from: "0xAbc123...",
+      amount: "0.01 ETH",
+      timestamp: "2025-01-10"
+    },
+    {
+      id: 2,
+      from: "0xDef456...",
+      amount: "0.02 ETH",
+      timestamp: "2025-01-11"
+    }
+  ]);
+});
+
+app.listen(5000, () => {
+  console.log("Backend running on port 5000");
+});
